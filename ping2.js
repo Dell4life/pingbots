@@ -34,6 +34,8 @@ client.on('message', message => {
 
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
+	
+	const author = message.author
 
 	if (command === 'ping1') {
 	//we need to fix client.ping
